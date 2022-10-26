@@ -13,7 +13,6 @@ pipeline {
         stage('UNIT Testing'){
 
             steps{
-                withMaven(maven: 'mvn3')
                     sh 'mvn test'
             }  
         }
