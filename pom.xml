@@ -42,6 +42,7 @@
                     </goals>
                     <configuration>
                         <finalName>Uber</finalName>
+						<encoding>UTF-8</encoding>
                     </configuration>
                 </execution>
             </executions>
