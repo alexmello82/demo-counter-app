@@ -31,7 +31,8 @@ pipeline {
         stage('Static Analisys Code'){
 
             stetps{
-                waitForQualityGate abortPipeline: false, credentialsId: 'sonar-api'
+                 waitForQualityGate abortPipeline: false, credentialsId: 'sonar-api'
+                 sh 'mvn clean package sonar:sonar'
             }
         }
     }
